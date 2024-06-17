@@ -3,8 +3,12 @@ SELECT
 	product.[Name],
 	category.[Name]
 FROM
-	[dbo].[Product] as product
+	[dbo].[ProductCategory] as productCategory
+	RIGHT JOIN
+		[dbo].[Product] as product
+		ON
+			productCategory.[ProductId] = product.[Id]
 	LEFT JOIN
 		[dbo].[Category] as category
 		ON
-			product.[Category] = category.[Id]
+			productCategory.[CategoryId] = category.[Id]

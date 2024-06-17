@@ -14,24 +14,9 @@ namespace GeometricShapeLibrary
         /// <summary>
         /// Площадь.
         /// </summary>
-        public double Area
-        {
-            get
-            {
-                double area;
-
-                if (IsRightTriangle())
-                {
-                    area = CalculateRightTriangleArea();
-                }
-                else
-                {
-                    area = CalculateHeronFormulaTriangleArea();
-                }
-
-                return area;
-            }
-        }
+        public double Area => IsRightTriangle() ?
+            CalculateRightTriangleArea() :
+            CalculateHeronFormulaTriangleArea();
 
         /// <summary>
         /// Создание экземпляра треугольника с задаными длинами сторон.
@@ -51,15 +36,8 @@ namespace GeometricShapeLibrary
         /// Опрделение, прямоугольный ли треугольник.
         /// </summary>
         /// <returns>True если треугольник прямоугольный.</returns>
-        public bool IsRightTriangle()
-        {
-            if (Math.Pow(Sides[0], 2) == Math.Pow(Sides[1], 2) + Math.Pow(Sides[2], 2))
-            {
-                return true;
-            }
-
-            return false;
-        }
+        public bool IsRightTriangle() => 
+            (Math.Pow(Sides[0], 2) == Math.Pow(Sides[1], 2) + Math.Pow(Sides[2], 2));
 
         /// <summary>
         /// Вычисление площади по формуле Герона.
@@ -78,9 +56,7 @@ namespace GeometricShapeLibrary
         /// Вычисление площади для прямоугольного треугольника.
         /// </summary>
         /// <returns>Площадь.</returns>
-        private double CalculateRightTriangleArea()
-        {
-            return 0.5 * Sides[1] * Sides[2];
-        }
+        private double CalculateRightTriangleArea() 
+            => 0.5 * Sides[1] * Sides[2];
     }
 }

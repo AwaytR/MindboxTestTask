@@ -13,15 +13,7 @@
         /// <summary>
         /// Площадь.
         /// </summary>
-        public double Area
-        {
-            get
-            {
-                var area = Math.PI * Math.Pow(Radius, 2);
-
-                return area;
-            }
-        }
+        public double Area => Math.PI * Math.Pow(Radius, 2);
 
         /// <summary>
         /// Создание экземпляра круга с заданным радиусом.
