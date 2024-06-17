@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometricShapeLibrary", "GeometricShapeLibrary\GeometricShapeLibrary.csproj", "{98468588-BB84-4D9C-B53F-B706AB5D6C11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometricShapeLibraryTest", "..\GeometricShapeLibraryTest\GeometricShapeLibraryTest.csproj", "{8C9CBAF6-AED2-460D-B1D7-4B40FD857CEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8E31CF47-5078-4388-ABC1-14DDF8D9CCDE}"
+	ProjectSection(SolutionItems) = preProject
+		SqlQuery_1.sql = SqlQuery_1.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98468588-BB84-4D9C-B53F-B706AB5D6C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98468588-BB84-4D9C-B53F-B706AB5D6C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98468588-BB84-4D9C-B53F-B706AB5D6C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98468588-BB84-4D9C-B53F-B706AB5D6C11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C9CBAF6-AED2-460D-B1D7-4B40FD857CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9CBAF6-AED2-460D-B1D7-4B40FD857CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C9CBAF6-AED2-460D-B1D7-4B40FD857CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9CBAF6-AED2-460D-B1D7-4B40FD857CEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04D638BA-B536-46F0-B6A9-3E6E303CCA0F}
+	EndGlobalSection
+EndGlobal
